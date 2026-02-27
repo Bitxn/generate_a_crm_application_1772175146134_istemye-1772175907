@@ -1,0 +1,245 @@
+{
+  "schemaVersion": "1.0",
+  "projectId": "{{PROJECT_ID}}",
+  "projectName": "{{PROJECT_NAME}}",
+  "generatedAt": "{{GENERATED_AT}}",
+  "lastModified": "{{LAST_MODIFIED}}",
+  "projectType": "{{PROJECT_TYPE}}",
+
+  "frontend": {
+    "framework": "react",
+    "language": "typescript",
+    "baseUrl": "http://localhost:5174",
+    "pages": {
+      "Welcome.tsx": {
+        "path": "frontend/src/pages/Welcome.tsx",
+        "route": "/welcome",
+        "category": "Public",
+        "purpose": "Onboarding page for new users. Initializes user database and generates unique user ID. Features animated gradient background, feature highlights, and privacy information.",
+        "key_features": [
+          "User database initialization",
+          "Unique user ID generation",
+          "Feature showcase",
+          "Privacy-first architecture explanation"
+        ],
+        "apiCalls": [],
+        "dependsOnPages": [],
+        "lastModified": "{{TIMESTAMP}}"
+      },
+      "Dashboard.tsx": {
+        "path": "frontend/src/pages/Dashboard.tsx",
+        "route": "/dashboard",
+        "category": "Core",
+        "purpose": "Main dashboard displaying CRM overview with key metrics, pipeline statistics, contact distribution, and recent activities. Provides quick actions for common tasks.",
+        "key_features": [
+          "Total contacts, companies, deals count",
+          "Pipeline value and weighted value",
+          "Contact segmentation (leads, prospects, customers)",
+          "Recent activity feed",
+          "Quick action buttons"
+        ],
+        "apiCalls": [],
+        "dependsOnPages": [],
+        "lastModified": "{{TIMESTAMP}}"
+      },
+      "Contacts.tsx": {
+        "path": "frontend/src/pages/Contacts.tsx",
+        "route": "/contacts",
+        "category": "Core",
+        "purpose": "Contact list page with grid view, search functionality, and filtering by status. Displays contact cards with key information, lead scores, and company associations.",
+        "key_features": [
+          "Search by name, email, title, company",
+          "Filter by status (lead, prospect, customer, partner)",
+          "Lead score visualization",
+          "Contact card grid layout",
+          "Export to CSV",
+          "Quick actions (view, edit, delete)"
+        ],
+        "apiCalls": [],
+        "dependsOnPages": [],
+        "lastModified": "{{TIMESTAMP}}"
+      },
+      "ContactForm.tsx": {
+        "path": "frontend/src/pages/ContactForm.tsx",
+        "route": "/contacts/new, /contacts/:id/edit",
+        "category": "Form",
+        "purpose": "Comprehensive contact creation and editing form. Multi-section layout covering personal info, professional details, social profiles, address, and notes.",
+        "key_features": [
+          "Basic information (name, email, phone)",
+          "Professional details (title, department, company)",
+          "Social media profiles (LinkedIn, Twitter)",
+          "Complete address fields",
+          "Lead scoring slider",
+          "Tags and notes"
+        ],
+        "apiCalls": [],
+        "dependsOnPages": [],
+        "lastModified": "{{TIMESTAMP}}"
+      },
+      "Companies.tsx": {
+        "path": "frontend/src/pages/Companies.tsx",
+        "route": "/companies",
+        "category": "Core",
+        "purpose": "Company list with grid view showing company cards. Displays company metrics including contact count, deal count, and total revenue. Features search and filtering.",
+        "key_features": [
+          "Company grid with statistics",
+          "Filter by company type",
+          "Search by name or industry",
+          "Contact/deal/revenue metrics per company",
+          "Priority indicators",
+          "Quick actions menu"
+        ],
+        "apiCalls": [],
+        "dependsOnPages": [],
+        "lastModified": "{{TIMESTAMP}}"
+      },
+      "CompanyForm.tsx": {
+        "path": "frontend/src/pages/CompanyForm.tsx",
+        "route": "/companies/new, /companies/:id/edit",
+        "category": "Form",
+        "purpose": "Company creation and editing form with business details, contact information, address, and company metadata like size, revenue, and priority.",
+        "key_features": [
+          "Company name and website",
+          "Industry and company size",
+          "Annual revenue tracking",
+          "Contact information",
+          "Full address fields",
+          "Company type and priority",
+          "Description/notes"
+        ],
+        "apiCalls": [],
+        "dependsOnPages": [],
+        "lastModified": "{{TIMESTAMP}}"
+      },
+      "Deals.tsx": {
+        "path": "frontend/src/pages/Deals.tsx",
+        "route": "/deals",
+        "category": "Core",
+        "purpose": "Visual pipeline board showing deals across stages in Kanban-style columns. Displays pipeline statistics and weighted deal values. Each stage shows deals with key information.",
+        "key_features": [
+          "Kanban board with 6 stages",
+          "Pipeline value and weighted value",
+          "Deal cards with probability",
+          "Expected close dates",
+          "Contact and company associations",
+          "Stage totals and counts"
+        ],
+        "apiCalls": [],
+        "dependsOnPages": [],
+        "lastModified": "{{TIMESTAMP}}"
+      },
+      "DealForm.tsx": {
+        "path": "frontend/src/pages/DealForm.tsx",
+        "route": "/deals/new, /deals/:id/edit",
+        "category": "Form",
+        "purpose": "Deal creation and editing form with value tracking, stage management, probability slider, and weighted value calculator. Links deals to contacts and companies.",
+        "key_features": [
+          "Deal title and value",
+          "Stage and status selection",
+          "Win probability slider (0-100%)",
+          "Weighted value calculation",
+          "Expected close date",
+          "Contact and company linking",
+          "Deal description"
+        ],
+        "apiCalls": [],
+        "dependsOnPages": [],
+        "lastModified": "{{TIMESTAMP}}"
+      },
+      "Activities.tsx": {
+        "path": "frontend/src/pages/Activities.tsx",
+        "route": "/activities",
+        "category": "Core",
+        "purpose": "Timeline view of all activities grouped by date. Shows activity type (call, email, meeting, task, note), status, priority, and associations with contacts/companies/deals.",
+        "key_features": [
+          "Grouped timeline by date",
+          "Filter by activity type and status",
+          "Activity icons and color coding",
+          "Duration tracking",
+          "Priority and status badges",
+          "Linked records display"
+        ],
+        "apiCalls": [],
+        "dependsOnPages": [],
+        "lastModified": "{{TIMESTAMP}}"
+      },
+      "ActivityForm.tsx": {
+        "path": "frontend/src/pages/ActivityForm.tsx",
+        "route": "/activities/new",
+        "category": "Form",
+        "purpose": "Activity logging form for recording interactions and tasks. Visual activity type selection with support for calls, emails, meetings, tasks, and notes.",
+        "key_features": [
+          "Activity type selector with icons",
+          "Subject and description",
+          "Date and time picker",
+          "Duration in minutes",
+          "Status and priority",
+          "Link to contact, company, or deal"
+        ],
+        "apiCalls": [],
+        "dependsOnPages": [],
+        "lastModified": "{{TIMESTAMP}}"
+      },
+      "Settings.tsx": {
+        "path": "frontend/src/pages/Settings.tsx",
+        "route": "/settings",
+        "category": "System",
+        "purpose": "Database management and system settings page. Shows database statistics, storage info, and provides backup/restore functionality. Displays user ID and privacy information.",
+        "key_features": [
+          "Database size and file info",
+          "Record count statistics",
+          "User ID display",
+          "Download database backup",
+          "Restore from backup file",
+          "Privacy information"
+        ],
+        "apiCalls": [],
+        "dependsOnPages": [],
+        "lastModified": "{{TIMESTAMP}}"
+      },
+      "Layout.tsx": {
+        "path": "frontend/src/pages/Layout.tsx",
+        "route": "N/A",
+        "category": "Component",
+        "purpose": "Main application layout wrapper with sidebar navigation. Provides consistent navigation across all protected routes with active state highlighting and logout functionality.",
+        "key_features": [
+          "Sidebar with logo and branding",
+          "Navigation menu with icons",
+          "Active route highlighting",
+          "Settings link",
+          "Logout functionality",
+          "Responsive layout structure"
+        ],
+        "apiCalls": [],
+        "dependsOnPages": [],
+        "lastModified": "{{TIMESTAMP}}"
+      }
+    },
+    "statistics": {
+      "total_pages": 12,
+      "total_routes": 15,
+      "categories": {
+        "Public": 1,
+        "Core": 6,
+        "Form": 4,
+        "System": 1,
+        "Component": 1
+      }
+    }
+  },
+
+  "backend": {
+    "framework": "fastapi",
+    "language": "python",
+    "baseUrl": "http://localhost:8056",
+    "database": {
+      "type": "sqlite",
+      "file": "backend/database.db",
+      "ormFile": "backend/database.py"
+    },
+    "models": {},
+    "routes": {}
+  },
+
+  "crossLinks": {}
+}
